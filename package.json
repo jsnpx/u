@@ -1,0 +1,35 @@
+{
+  "name": "@jsnpx/u",
+  "version": "0.0.1",
+  "description": "Utilities for @jsnpx scripts",
+  "type": "module",
+  "source": "src/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^8.0.1",
+    "handlebars": "^4.7.8",
+    "handlebars-helper-repeat": "^2.0.0",
+    "handlebars-helpers": "^0.10.0",
+    "yargs": "^18.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
